@@ -18,7 +18,7 @@ spec:
       containers:
         - name: httpbin
           image: kennethreitz/httpbin
-          command: ["sh", "-c", "apk add --no-cache curl && httpbin"]
+          command: ["sh", "-c", "pip install ddtrace && ddtrace-run httpbin"] 
           ports:
             - containerPort: 80
           env:
