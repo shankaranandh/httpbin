@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: httpbin
-  namespace: default
+  namespace: cd-attendee-dev
   labels:
     app: httpbin
 spec:
