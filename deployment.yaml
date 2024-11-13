@@ -27,7 +27,7 @@ spec:
             - name: DD_ENV
               value: "dev"  # Set this according to your environment (e.g., dev, staging, prod)
             - name: DD_TRACE_AGENT_URL
-              value: "http://datadog-agent:8126"  # Ensure this points to the Datadog agent in the same namespace
+              value: "http://datadog-agent.default.svc.cluster.local:8126"  # Ensure this points to the Datadog agent in the same namespace
             - name: DD_APM_ENABLED
               value: "true"  # Enable APM traces for this container
             - name: DD_LOGS_ENABLED
