@@ -25,6 +25,8 @@ spec:
               value: "httpbin"  # The service name in Datadog
             - name: DD_ENV
               value: "dev"  # Set this according to your environment (e.g., dev, staging, prod)
+            - name: DD_AGENT_HOST
+              value: "datadog-agent.default.svc.cluster.local"
             - name: DD_TRACE_AGENT_URL
               value: "http://datadog-agent.default.svc.cluster.local:8126"  # Ensure this points to the Datadog agent in the same namespace
             - name: DD_APM_ENABLED
